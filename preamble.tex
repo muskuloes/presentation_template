@@ -15,6 +15,7 @@
 \usepackage{tabularx}
 \usepackage{booktabs}
 \usepackage{threeparttable}
+\usepackage{natbib}
 
 %FONT
 \usepackage[T1]{fontenc}
@@ -38,21 +39,21 @@
     }
 }
 \setbeamertemplate{navigation symbols}{}
-\definecolor{ifo-blue}{RGB}{13,64,128}
-\definecolor{ifo-blue2}{RGB}{100,149,237}
-\setbeamercolor{title}{fg=ifo-blue}
-\setbeamercolor{frametitle}{fg=ifo-blue}
-\setbeamercolor{structure}{fg=ifo-blue}
-\setbeamercolor{section in head/foot}{fg=ifo-blue, bg=lightgray!20}
+\definecolor{lmu-green}{RGB}{0,136,58}
+\definecolor{lmu-green2}{RGB}{0,136,58}
+\setbeamercolor{title}{fg=lmu-green}
+\setbeamercolor{frametitle}{fg=lmu-green}
+\setbeamercolor{structure}{fg=lmu-green}
+\setbeamercolor{section in head/foot}{fg=lmu-green, bg=lightgray!20}
 \setbeamercolor{title}{bg={lightgray!20}} % {} = transparent
-\setbeamercolor{button}{bg={lightgray!30},fg=ifo-blue}
+\setbeamercolor{button}{bg={lightgray!30},fg=lmu-green}
 
 %% TITLE FRAME
 \setbeamertemplate{title page}
 {
         \vspace{15mm}
-        {\usebeamerfont{title}\usebeamercolor[ifo-blue]{title}\Large\inserttitle}\\
-        {\usebeamerfont{subtitle}\usebeamercolor[ifo-blue]{subtitle}\large\insertsubtitle}\\ \vspace{7mm}
+        {\usebeamerfont{title}\usebeamercolor[lmu-green]{title}\Large\inserttitle}\\
+        {\usebeamerfont{subtitle}\usebeamercolor[lmu-green]{subtitle}\large\insertsubtitle}\\ \vspace{7mm}
         {\insertauthor}\\
         {\textcolor{gray}{\scriptsize\insertinstitute}}\\ \vspace{4mm}
         {\textcolor{gray}{\insertdate}}\\
@@ -83,7 +84,7 @@
 \usepackage{tcolorbox}
 \tcbuselibrary{theorems}
 \newtcbtheorem{finding}{}{colback=white,colframe=lightgray!30, sharp corners, separator sign none, no counter}{th}
-%\newtcbtheorem{finding}{\color{ifo-blue}Puzzle}{colback=white,colframe=lightgray!30,fonttitle=\bfseries,sharp corners}{th}
+%\newtcbtheorem{finding}{\color{lmu-green}Puzzle}{colback=white,colframe=lightgray!30,fonttitle=\bfseries,sharp corners}{th}
 
 %DIAGRAMS
 \usepackage{tikz}

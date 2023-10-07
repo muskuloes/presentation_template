@@ -20,6 +20,15 @@
 
 \begin{document}
 
+{
+\usebackgroundtemplate{
+\tikz[overlay,remember picture]\node[opacity=0.2, at=(current page.south east)] {
+\includegraphics[width=.6\paperwidth,height=.8\paperheight]{figures/sigillum.png}};
+}
+\frame[plain]{\titlepage}
+\addtocounter{framenumber}{-1}
+}
+
 \frame[plain]{\titlepage}
 \addtocounter{framenumber}{-1}
 
@@ -27,7 +36,7 @@
 %%% OUTLINE %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\frame{\frametitle{\textbf{Outline}} \tableofcontents}
+\frame{\frametitle{\textbf{Outline}} \tableofcontents}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -43,7 +52,7 @@
     	    \item[---] subbulletpoint
     	    \item[---] ...
     	\end{itemize}
-    	\item use \emph{typography} or \textcolor{ifo-blue}{color} to emphasize
+    	\item use \emph{typography} or \textcolor{lmu-green}{color} to emphasize
 	\end{itemize}
 \end{frame}
 
@@ -54,7 +63,7 @@
 
 % Chapter Devider Slide
 {
-	\setbeamercolor{background canvas}{bg=ifo-blue}
+	\setbeamercolor{background canvas}{bg=lmu-green}
 	\begin{frame}[plain]		
     	\vspace{1cm}
     	{\color{white}\LARGE \textbf{Data}}
@@ -65,7 +74,7 @@
 % Sample Slide:
 \begin{frame}{\textbf{SlideTitle:} SlideSubTitle}
 	\begin{itemize}
-	    \item bulletpoint
+          \item bulletpoint \citep{Kreiss2022}
     	\begin{itemize}
     	    \item[---] subbulletpoint
     	    \item[---] ...
@@ -74,7 +83,7 @@
 	\end{itemize}
 	\vspace{.4cm}
 	\begin{finding*}
-	{\hspace{-.4cm}\textcolor{ifo-blue}{\textbf{This is a box.}}}{
+	{\hspace{-.4cm}\textcolor{lmu-green}{\textbf{This is a box.}}}{
 	    \begin{itemize}
 	        \item[---] bulletpoint
 	        \item[---] bulletpoint
@@ -88,7 +97,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Identification}
 {
-	\setbeamercolor{background canvas}{bg=ifo-blue}
+	\setbeamercolor{background canvas}{bg=lmu-green}
 	\begin{frame}[plain]		
 		\vspace{1cm}
 		{\color{white}\LARGE \textbf{Empirical strategy}}
@@ -118,7 +127,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Descriptives}
 {
-	\setbeamercolor{background canvas}{bg=ifo-blue}
+	\setbeamercolor{background canvas}{bg=lmu-green}
 	\begin{frame}[plain]		
     	\vspace{1cm}
     	{\color{white}\LARGE \textbf{Descriptive statistics}}
@@ -147,7 +156,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
 {
-	\setbeamercolor{background canvas}{bg=ifo-blue}
+	\setbeamercolor{background canvas}{bg=lmu-green}
 	\begin{frame}[plain]		
 		\vspace{1cm}
 		{\color{white}\LARGE \textbf{Results}}
@@ -186,7 +195,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Outlook}
 {
-	\setbeamercolor{background canvas}{bg=ifo-blue}
+	\setbeamercolor{background canvas}{bg=lmu-green}
 	\begin{frame}[plain]		
 		\vspace{1cm}
 		{\color{white}\LARGE \textbf{Challenges \& outlook}}
@@ -210,19 +219,26 @@
 %%% THANK YOU %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {
-    \setbeamercolor{background canvas}{bg=ifo-blue}
+    \setbeamercolor{background canvas}{bg=lmu-green}
     \begin{frame}[plain]		
     	\vspace{1.5cm}
     	{\color{white}\LARGE \textbf{Thanks,}\\ \vspace{.2cm} \large what are your questions?}
     		
     	\vspace{2.5cm}
     	
-    	\hspace{7cm}\circled{{\color{ifo-blue}\fontsize{8}{9}\faEnvelope}} \hspace{.1cm} {\footnotesize \color{white} \href{mailto:#}{name@institution.com}}\\ % für 16:9 10cm
-    	\hspace{7cm}\circled{{\color{ifo-blue}\footnotesize\faTwitter}} \hspace{.1cm} {\footnotesize \color{white} \href{#}{TwitterHandle}}\\ % für 16:9 10cm
-    	\hspace{7cm}\circled{{\color{ifo-blue}\footnotesize\faHome}} \hspace{.1cm} {\footnotesize \color{white} \href{#}{yourwebsite.com}}\\ % für 16:9 10cm
+    	\hspace{7cm}\circled{{\color{lmu-green}\fontsize{8}{9}\faEnvelope}} \hspace{.1cm} {\footnotesize \color{white} \href{mailto:#}{name@institution.com}}\\ % für 16:9 10cm
+    	\hspace{7cm}\circled{{\color{lmu-green}\footnotesize\faTwitter}} \hspace{.1cm} {\footnotesize \color{white} \href{#}{TwitterHandle}}\\ % für 16:9 10cm
+    	\hspace{7cm}\circled{{\color{lmu-green}\footnotesize\faHome}} \hspace{.1cm} {\footnotesize \color{white} \href{#}{yourwebsite.com}}\\ % für 16:9 10cm
     \end{frame}
     \addtocounter{framenumber}{-1}
 }
+
+\begin{frame}
+  \bibliographystyle{apalike}
+    {\footnotesize
+      \bibliography{references.bib}
+    }
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% APPENDIX %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
